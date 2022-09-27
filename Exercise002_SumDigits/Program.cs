@@ -28,8 +28,8 @@ void OnlyTheNumber(string message) // вычисляет сумму цифр ц�
         Console.WriteLine(message);
         string value = Console.ReadLine();
         int number = int.Parse(value);
-       int summa = SumDigits(number);
-        Console.WriteLine(summa);
+        int summa = SumDigits(number);
+        Console.WriteLine($"Сумма цифр данного числа = {summa}");
     }
 
     catch (FormatException)
@@ -40,14 +40,7 @@ void OnlyTheNumber(string message) // вычисляет сумму цифр ц�
     }
 }
 
-
-
-
-
-
-
-
-string text = new String('*', 40);  // Выводит заданное количество символов, в дан-ном случае 40
+string text = new String('*', 40);  // Выводит заданное количество символов, в данном случае 40
 emptyString(6);
 Console.WriteLine(text);
 Console.WriteLine("    Задача 2");
