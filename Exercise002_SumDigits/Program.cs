@@ -8,7 +8,7 @@
     }
 }
 
-int SumDigits(int numb)
+int SumDigits(int numb) // возвращает сумму цифр принимаемого целого числа
 {
     if(numb < 0)
     {   numb *= -1; }
@@ -21,9 +21,9 @@ int SumDigits(int numb)
     return sum;
 }
 
-void OnlyTheNumber(string message) // находит расстояние между 2 точками в пространстве
-{
-    try
+void OnlyTheNumber(string message) // вычисляет сумму цифр целого числа с помощью вызываемого метода метода 
+{                                  // позволяет ввести целое число, обрабатывая исключения и 
+    try                            // возвращая пользователя к вводу, пока он не будет удачен
     {
         Console.WriteLine(message);
         string value = Console.ReadLine();
